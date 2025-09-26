@@ -1,6 +1,6 @@
-import { ApolloServer } from "@apollo/server";
-import { startStandaloneServer } from "@apollo/server/standalone";
-import { gql } from "graphql-tag";
+import { ApolloServer } from '@apollo/server';
+import { startStandaloneServer } from '@apollo/server/standalone';
+import { gql } from 'graphql-tag';
 
 const typeDefs = gql`
   type Query {
@@ -10,7 +10,7 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
-    hello: () => "Olá, Lucas! GraphQL funcionando 🎉",
+    hello: () => 'Olá, Lucas! GraphQL funcionando 🎉',
   },
 };
 
